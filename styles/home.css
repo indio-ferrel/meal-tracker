@@ -1,1 +1,8 @@
-/* add home page styles here */
+sup {
+    font-size: .5em;
+    vertical-align: super;
+}
+
+.footnote {
+    text-align: left;
+}
