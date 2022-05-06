@@ -1,4 +1,6 @@
-// import functions and grab DOM elements
+// import functions
+
+// grab DOM elements
 
 // let state
 
