@@ -23,15 +23,56 @@
             <h2>
                 Welcome to trackameal.io, the hip new meal tracker/hacker<sup><a href="#1">1</a></sup>!
             </h2>
+            <section>
+                <h4>Add Ingredients</h4>
+                <div class="recipe">
+                    <form id="ingredients-form">
+                        <label>
+                            Ingredient:
+                            <input type="text" name="ingredient" id="ingredient" />
+                        </label>
+                        <label>
+                            Quantity:
+                            <input type="text" name="quantity" id="quantity" />
+                        </label>
+                        <label>
+                            Measurement:
+                            <select name="measurement" id="serving">
+                                <option value="grams">Grams</option>
+                                <option value="ml">Milliliters</option>
+                                <option value="cups">Freedom Cups</option>
+                                <option value="tsp">Arbitrary Spoon</option>
+                                <option value="tbsp">Larger Arbitrary Spoon</option>
+                            </select>
+                        </label>
+                        <button type="submit">Add Ingredient</button>
+                    </form>
+                    <div id="ingredients-div">
+                        <ul id="ingredient-list"></ul>
+                        <button id="remove">Remove Last Item</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h4>Save Meal</h4>
+                <div class="save-div">
+                    <form id="save-form">
+                        <label>
+                            Meal Name:
+                            <input type="text" name="meal-name" id="meal-name" />
+                        </label>
+                        <button id="save-button">Save Meal</button>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <h2>Meals</h2>
+                <div class="meal-div">
+                    <ul ud=""meal-list"></ul>
+                </div>
+            </section>
 
-            <p>
-                Lorem
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum
-            </p>
-            <div class="footnote" id="1">1. "Hacking" claims not evaluated by the US FDA.</div>
+            <div class="footnote" id="1"><p>1. "Meal hacking" claims not evaluated by the US FDA.</p></div>
 
         </section>
     </main>
@@ -39,7 +80,7 @@
         
         <br>
         <br>
-        <div class="copy gutter-right">&copy; 2022 Inspiring Programmer</div>
+        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
